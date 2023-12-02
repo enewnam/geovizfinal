@@ -1,0 +1,107 @@
+html,
+body,
+#viewDiv
+	{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	}
+
+#optionsDiv 
+	{
+	width: 298px;
+	padding: 0 12px 0 12px;
+	background-color: white;
+	padding: 10px;
+	}
+
+.panel-container 
+	{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	}
+
+.panel-side 
+	{
+	font-size: 13px;
+	padding: 2px;
+	box-sizing: border-box;
+	width: 300px;
+	height: 27%;
+	position: absolute;
+	top: 200px;
+	right: 14px;
+	color: #000000;
+	background-color: rgba(255, 255, 255, 1);
+	overflow: auto;
+	z-index: 60;
+	}
+
+.panel-side h2 
+	{
+	padding: 0 20px;
+	margin: 20px 0;
+	}
+
+.panel-side ul 
+	{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+.panel-side li 
+	{
+	padding: 5px 20px;
+	}
+
+.panel-result 
+	{
+	cursor: pointer;
+	margin: 2px 0;
+	background-color: rgba(85, 209, 130, 0.5);
+	}
+
+.panel-result:hover,
+.panel-result:focus 
+	{
+	color: #55d182;
+	background-color: rgba(0, 0, 0, 0.75);
+	}
+
+#BasemapToggle 
+	{
+	position: absolute;
+	top: 20px;
+	right: 200px;
+	z-index: 50;
+	}
+
+#TitleDiv 
+	{
+	position: absolute;
+	top: 15px;
+	left: 60px;
+	padding: 21px 12px;
+	background-color: rgba(85, 209, 130, 0.8);
+	color: #000000;
+	width: 400px;
+	height: 23px;
+	letter-spacing: 2px;
+	vertical-align: middle;
+	text-align: center;
+	}
+
+#DirInstDiv 
+	{
+	position: absolute;
+	top: 15px;
+	left: 160px;
+	padding: 12px;
+	background-color: rgba(255, 255, 255, 1);
+	color: #000000;
+	width: 364px;
+	height: 60+px;
+	}

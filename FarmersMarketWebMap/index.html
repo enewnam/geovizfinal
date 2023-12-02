@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    
+		<title>Farmers Market Web Map</title>
+
+		<link rel="stylesheet" href="main2.css"></link>
+		<link rel="stylesheet" href="https://js.arcgis.com/4.20/esri/themes/light/main.css" />
+		<script src="https://js.arcgis.com/4.20/"></script>
+		<script src="main.js"></script>
+	</head>
+
+	<body>
+        
+	<div class="panel-container">
+    
+		<div class="panel-side">
+			<font style="font-size: 14px;"><center>Farmers Markets</center></font><br />
+			<ul id="list_markets">
+			<li>Loading&hellip;</li>
+			</ul>
+		</div>
+    
+		<div id="viewDiv">
+		</div>
+
+		<div id="optionsDiv" class="esri-widget">
+
+ 			<div>
+        
+				Choose a neighborhood from the drop down menu to filter the list of farmers markets by neighborhood.<br><br> 
+        
+				<select id="marketSelect">
+					<option value="1=1">All</option>
+					<option value="NEIGHBORHO = 'Center City'">Center City</option>
+					<option value="NEIGHBORHO = 'Germantown/ Chestnut Hill'">Germantown/Chestnut Hill</option>
+					<option value="NEIGHBORHO = 'Lower North'">Lower North</option>
+					<option value="NEIGHBORHO = 'North'">North</option>
+					<option value="NEIGHBORHO = 'Northeast'">Northeast</option>
+					<option value="NEIGHBORHO = 'Northwest'">Northwest</option>
+					<option value="NEIGHBORHO = 'Roxborough/ Manayunk'">Roxborough/ Manayunk</option>
+					<option value="NEIGHBORHO = 'South'">South</option>
+					<option value="NEIGHBORHO = 'Southwest'">Southwest</option>
+					<option value="NEIGHBORHO = 'West'">West</option>
+				</select>
+      			</div>
+		</div>
+	</div>
+    
+	<div id="map" class="map">
+		<div id="BasemapToggle">
+		</div>
+	</div>
+    
+	<div id="TitleDiv">
+		<font style="font-size: 16px;">
+		<b>Farmers Markets in Philadelphia</b>
+		</font>
+	</div> 
+    
+	<div id="DirInstDiv">
+		<font style="font-size: 12px; letter-spacing: 0.5px;">
+		<b>Find your way to any market:</b>
+		&nbsp;&nbsp;Click inside the first field of the directions widgit and then click on your starting location. Click inside the second field and then click on the market that will be your destination.
+		</font>
+	</div> 
+    
+	</body>
+</html>
