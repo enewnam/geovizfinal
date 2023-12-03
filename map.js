@@ -4,7 +4,7 @@
 
         var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
             'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        mbUrl = 'https://tiles.stadiamaps.com/tiles/{id}/{z}/{x}/{y}{r}.png?access_token=pk.eyJ1IjoiZW5ld25hbSIsImEiOiJjbG83cXp6bm0wOGt0MmpvNG9uZGhiNm45In0.qYMc7A5eJWmwFz-jYJbNTw';
+        mbUrl = 'https://tiles.stadiamaps.com/tiles/{id}/{z}/{x}/{y}{r}.png?access_token=6548ac8d-2ea1-4db5-8ff6-dfde7b83f99c';
     
         var grayscale = L.tileLayer(mbUrl, {id: 'alidade_smooth', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 
