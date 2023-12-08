@@ -1,5 +1,5 @@
         var map = L.map('map', {center: [39.999192, -75.136999], zoom: 14});
-    	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png').addTo(map);
+    	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png').addTo(map);
     	map.doubleClickZoom.disable();
 
         var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
@@ -8,7 +8,7 @@
     
         var grayscale = L.tileLayer(mbUrl, {id: 'alidade_smooth', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 
-        var streets = L.tileLayer(mbUrl, {id: 'alidade_smooth_dark', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+        var streets = L.tileLayer(mbUrl, {id: 'outdoors', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 
         // Create an Empty Popup
         var popup = L.popup();
@@ -129,7 +129,7 @@
 
 
         var map2 = L.map('map2', {center: [39.999192, -75.136999], zoom: 11});
-    	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png').addTo(map2);
+    	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png').addTo(map2);
     	map.doubleClickZoom.disable();
 
         var geojsonLayer2 = null;
@@ -172,7 +172,7 @@
                     // Customize the marker based on the properties of each feature
                     return L.circleMarker(latlng, {
                         radius: 4,
-                        fillColor: 'green',  // Change this to the desired fill color
+                        fillColor: 'lime',  // Change this to the desired fill color
                         color: 'black',      // Change this to the desired border color
                         weight: 1,            // Change this to the desired border weight
                         opacity: 1,           // Change this to the desired border opacity
@@ -184,7 +184,7 @@
 
         var baseMaps = {
             "Grayscale": grayscale,
-            "Dark": streets
+            "Streets": streets
             };
 
         
